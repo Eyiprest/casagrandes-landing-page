@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600;700&display=swap');
 
+/*-- home styling goes here --*/
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
     box-sizing: border-box;
 }
 
-div.main-container {
+section#home {
     background: #080808;
     margin: 0;
     padding: 0;
@@ -37,9 +38,25 @@ nav ul li {
     padding: 20px;
 }
 
-li a {
+nav ul li a {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #1B9FCF;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 div.container2 {
@@ -107,3 +124,5 @@ div.paragraph {
     color: white;
     font-weight: 500;
 }
+
+/*-- characters styling goes here --*/
