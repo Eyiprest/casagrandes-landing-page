@@ -9,7 +9,6 @@
 }
 
 section#home {
-    background: #080808;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #1F9BCE, #7967A5);
@@ -22,6 +21,8 @@ div.container1  nav{
     padding: 0 20px 5px 20px;
     margin: 0;
     border: none;
+    position: fixed;
+    width: 100%;
 }
 
 div h1#heading {
@@ -63,7 +64,7 @@ div.container2 {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 40px 20px 40px 20px;
+    padding: 150px 20px 60px 20px;
     border: none;
 }
 
@@ -125,4 +126,90 @@ div.paragraph {
     font-weight: 500;
 }
 
+div.explore {
+  background: #FEF8E0;
+}
+
+div.explore2 {
+    color: black;
+    max-width: 700px;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2.explore-heading {
+    font-family: 'Fredoka One', cursive;
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p.show-description {
+    color: #AAABB2;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
 /*-- characters styling goes here --*/
+section#characters {
+    background: #FEF8E0;
+}
+div.explore3 {
+    color: black;
+    max-width: 900px;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-grid {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.card {
+    border-radius: 20px;
+    background: #4287BE;
+}
+
+.card  img {
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.card h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.4;
+    padding: 20px;
+    font-family: poppins;
+    line-height: 1.6;
+}
+
+h2.explore-heading2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
