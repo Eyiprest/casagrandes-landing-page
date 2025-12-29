@@ -79,12 +79,16 @@ body {
     text-decoration: none;
     color: var(--text-primary);
     font-weight: 500;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .nav-menu a:hover {
     color: #1B9FCF;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(27, 159, 207, 0.3);
 }
+
 
 /* ============================================
    HERO SECTION
@@ -94,7 +98,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px; /* offset for fixed nav */
+    padding-top: 80px; 
 }
 
 .hero-container {
@@ -186,7 +190,7 @@ body {
 
 .character-img { width: 80%; height: 80%; object-fit: contain; }
 
-/* Hide hamburger by default */
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -209,7 +213,7 @@ body {
 
     .nav-menu {
         position: fixed;
-        left: -100%; /* Hidden by default */
+        left: -100%; 
         top: 70px;
         flex-direction: column;
         background-color: white;
@@ -220,7 +224,7 @@ body {
         padding: 20px 0;
     }
 
-    /* When the 'active' class is added via JS */
+    
     .nav-menu.active {
         left: 0;
     }
@@ -229,7 +233,7 @@ body {
         margin: 15px 0;
     }
 
-    /* Animation for hamburger to X */
+    
     .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
     .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
     .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
@@ -252,17 +256,17 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-/* This replaces the gradient background with the full image */
+
 .episode-image-wrapper {
     width: 100%;
-    height: 220px; /* Adjust height as needed */
+    height: 220px; 
     overflow: hidden;
 }
 
 .episode-full-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This makes the image fill the area perfectly */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
@@ -304,11 +308,49 @@ body {
     gap: 40px;
 }
 
-.footer-title { color: var(--yellow); font-family: 'Fredoka One'; margin-bottom: 20px; }
-.footer-links { list-style: none; }
-.footer-links li { margin-bottom: 10px; opacity: 0.8; }
+.footer-title { 
+    color: var(--yellow); 
+    font-family: 'Fredoka One'; 
+    margin-bottom: 20px; 
+}
+
+.footer-links { 
+    list-style: none; 
+}
+
+.footer-links li { 
+    margin-bottom: 10px; 
+}
+
+/*Footer Links Styling */
+.footer-links li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+
+.footer-links li a:hover {
+    color: #1B9FCF;
+    opacity: 1;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(27, 159, 207, 0.4);
+    padding-left: 5px; 
+}
+
 .social-icons { display: flex; gap: 15px; margin-top: 20px; }
-.logo-bg { background: var(--teal); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+.logo-bg { 
+    background: var(--teal); 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
 .logo { width: 20px; filter: invert(1); }
 .footer-divider { opacity: 0.1; margin: 40px 0 20px; }
 .copyright { text-align: center; opacity: 0.6; font-size: 14px; }
