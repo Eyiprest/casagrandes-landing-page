@@ -127,3 +127,125 @@ style>
         grid-template-columns: 1fr; /* 1 per row on phones */ }
         }
     
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600;700&display=swap');
+
+.episodes {
+    font-family: 'Fredoka one', cursive;
+    color: #2D3748;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.latest {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 24px;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.image-bg {
+    background-color: #FFC107;
+    text-align: center;
+}
+
+.image-bg img {
+    padding: 60px;
+    width: 50px;
+    height: 50px;
+}
+
+.text-bg {
+    background-color: #FFFFFF;
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.text-bg h3 {
+    font-size: 24px;
+}
+
+.text-bg p {
+    font-size: 18px;
+}
+
+.text-bg button {
+    font-size: 18px;
+    background-color: #ff4500;
+    padding: 16px 32px;                           ;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 900px bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer {
+    padding: 40px 24px;
+    background-color: #2D3748;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 48px 24px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.end {
+    color: #FFC107;
+    font-family: 'Fredoka one', cursive;
+}
+
+#links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00B8D4;
+    margin: 0 5px;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+hr {
+    border: none;
+    height: 0.08px;
+    background-color: grey;
+    margin: 0 48px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 16px;
+}   
+
